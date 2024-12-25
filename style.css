@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Monda:regular,500,600,700);
+
 *,
 *::after,
 *::before {
@@ -16,24 +18,28 @@ li {
     list-style: none;
 }
 
+.wrapper {
+    font-family: Monda;
+}
+
 .header {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    color: #FFFFFF;
 }
 
 
 .header>img {
     position: absolute;
     width: 100%;
-    z-index: -1;
 }
 
 
 .hedaer__bg {
     filter: blur(1px);
-    z-index: -3;
+    z-index: -4;
 }
 
 .container {
@@ -51,7 +57,6 @@ li {
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.25);
     padding: 15px 40px;
-    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,4 +94,86 @@ li {
     border: none;
     outline: none;
     color: #FFFFFF;
+}
+
+
+/* Header__content */
+
+.header__content {
+    position: relative;
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__left {
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+
+.left-p1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: -1;
+    font-style: italic;
+
+}
+
+.left-p2 {
+    font-size: 128px;
+    font-weight: 600;
+}
+
+
+.right-p1 {
+    position: relative;
+    z-index: -1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 136px;
+    font-style: italic;
+    font-size: 900;
+    letter-spacing: 10px;
+    text-align: right;
+}
+
+.right-p2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.right__icons {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon__role,
+.icon__difficulty {
+    width: 60px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.btn__border {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(img/btn-border.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4.5px;
+}
+
+.content__btn {
+    padding: 10px 0;
+    background-color: #56B5E9;
+    color: black;
+    font-weight: 700;
 }
